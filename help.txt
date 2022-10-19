@@ -1,0 +1,10 @@
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/360009485660-No-Java-EE-tab-in-New-Project-
+
+https://stackoverflow.com/questions/48972749/deploying-a-webapp-using-glassfish-and-intellij
+
+https://www.jetbrains.com/help/idea/preparing-to-develop-a-web-service.html
+
+
+https://www.youtube.com/watch?v=J212XSlZfDY
+
+https://gist.github.com/AmiralBl3ndic/16f8b85f149640c908b8f189d2a44f1b
