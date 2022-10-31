@@ -8,7 +8,7 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class JmsEmailReceiver implements JmsActionReceiver{
+public class JmsEmailReceiver implements JmsActionReceiver {
 
     @Autowired
     private EmailHistoryService emailHistoryService;

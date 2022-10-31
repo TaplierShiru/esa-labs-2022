@@ -44,7 +44,7 @@ Create new table:
 In order to logg system operations - Spring AOP was applied.
 
 This logic implement `LoggingAspect` class. This class watches for every service methods and logs all the events into 
-JMS using `convertAndSend` method.
+JMS using `convertAndSend` method via topic with `event` destination.
 
 ## Task 3
 In order to store loggs, service class needed for watched, but there are could be cycle-call in `LoggingAspect`. 
@@ -53,7 +53,8 @@ To escape that, `NoLoggin` class was created. `@NoLoggin` annotation must be app
 Thanks to AOP, we add logging system without any modification of the existing classes and logic.
 
 ## Task 4
-As a listener, `JmsMessageReciver` was implemented which listens for the events and add each event into the watched table.
+As a receivers we will create two classes `JmsEmailReceiver` and `JmsEventReceiver` which will be listened to `event` 
+destination and add each event into the watched/email table.
 
 ## Task 5
 Create new table:
