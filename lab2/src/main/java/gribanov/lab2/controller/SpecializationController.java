@@ -49,7 +49,7 @@ public class SpecializationController {
     }
 
     @DeleteMapping("/{specializationId}")
-    public ResponseEntity<Object> updateSpecialization(@PathVariable("specializationId") String specializationId) {
+    public ResponseEntity<Object> deleteSpecialization(@PathVariable("specializationId") String specializationId) {
         Optional<Specialization> optionalSpecialization = this.specializationService.getById(Integer.valueOf(specializationId));
         if (!optionalSpecialization.isPresent()) {
             return new ResponseEntity<>(

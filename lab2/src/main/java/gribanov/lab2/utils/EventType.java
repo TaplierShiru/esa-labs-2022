@@ -1,7 +1,7 @@
 package gribanov.lab2.utils;
 
 public enum EventType {
-    INSERT_TYPE("insert"), UPDATE_TYPE("update"), DELETE_TYPE("delete"), SELECT_TYPE("select");
+    UNKNOWN_TYPE("unknown"), INSERT_TYPE("insert"), UPDATE_TYPE("update"), DELETE_TYPE("delete"), SELECT_TYPE("select");
 
     private String label;
 

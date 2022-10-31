@@ -48,7 +48,7 @@ public class StudentController {
     }
 
     @DeleteMapping("/{studentId}")
-    public ResponseEntity<Object> updateStudent(@PathVariable("studentId") String studentId) {
+    public ResponseEntity<Object> deleteStudent(@PathVariable("studentId") String studentId) {
         Optional<Student> optionalStudent = this.studentService.getById(Integer.valueOf(studentId));
         if (!optionalStudent.isPresent()) {
             return new ResponseEntity<>(

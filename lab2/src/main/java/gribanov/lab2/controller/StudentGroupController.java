@@ -49,7 +49,7 @@ public class StudentGroupController {
     }
 
     @DeleteMapping("/{studentGroupId}")
-    public ResponseEntity<Object> updateStudentGroup(@PathVariable("studentGroupId") String studentGroupId) {
+    public ResponseEntity<Object> deleteStudentGroup(@PathVariable("studentGroupId") String studentGroupId) {
         Optional<StudentGroup> optionalStudentGroup = this.studentGroupService.getById(Integer.valueOf(studentGroupId));
         if (!optionalStudentGroup.isPresent()) {
             return new ResponseEntity<>(

@@ -44,7 +44,7 @@ public class SessionDataController {
     }
 
     @DeleteMapping("/{sessionDataId}")
-    public ResponseEntity<Object> updateSessionData(@PathVariable("sessionDataId") String sessionDataId) {
+    public ResponseEntity<Object> deleteSessionData(@PathVariable("sessionDataId") String sessionDataId) {
         Optional<SessionData> optionalSessionData = this.sessionDataService.getById(Integer.valueOf(sessionDataId));
         if (!optionalSessionData.isPresent()) {
             return new ResponseEntity<>(

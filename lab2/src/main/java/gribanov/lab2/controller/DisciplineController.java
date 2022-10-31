@@ -69,7 +69,7 @@ public class DisciplineController {
     }
 
     @DeleteMapping("/{disciplineId}")
-    public ResponseEntity<Object> updateDiscipline(@PathVariable("disciplineId") String disciplineId) {
+    public ResponseEntity<Object> deleteDiscipline(@PathVariable("disciplineId") String disciplineId) {
         Optional<Discipline> optionalDiscipline = this.disciplineService.getById(Integer.valueOf(disciplineId));
         if (!optionalDiscipline.isPresent()) {
             return new ResponseEntity<>(
